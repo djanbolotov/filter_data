@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menuLink{
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease-in;
+    font-size: 1.1rem;
+}
+
+.empty_data{
+    margin-top: 15rem;
+}
+
+.filterContainer{
+    cursor: pointer;
+    position: fixed;
+    top: 30%;
+    width: 30%;
+    left: 65%;
+    border: 1px solid  aqua;
+    padding: 1rem;
+    background-color: aqua;
+}
+
+.input_area{
+    position: fixed;
+    top: 20%;
+    left: 65%;
+    width: 32%;
+    border-radius: 0.3rem;
+    height: 2rem;
+}
+.companies{
+    width: 60%;
+    margin-top: 5rem;
+}
+
+.company{
+    margin-top: 0.4rem;
+    padding: 0.5rem;
+    border: 1px solid aqua;
+    border-radius: 1rem;
+}
+.filterContainer div{
+    margin-bottom: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterContainer div select{
+    background-color: aqua;
+    border: 0 solid aqua;
+    color: white;
+}
+
+.navBar{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: aqua;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo{
+    padding: 1rem 0;
+    color: white;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.logo span{
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
