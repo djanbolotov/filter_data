@@ -35,10 +35,10 @@ export default function App() {
 
   function changeFilter(word: string)
   {
-    let re = new RegExp(word, 'gi')
+    let expression = new RegExp(word, 'gi')
     setCompanies((word) => {
       return (
-        Data.filter(company => company.name.match(re))
+        Data.filter(company => company.name.match(expression))
       )
     }) 
   }
@@ -51,7 +51,7 @@ export default function App() {
     <div className="container">
       <NavBar/>
       <div className="filterAndCompany">
-        <Filters filters={filters} setFilters={setFilters}/>
+        <Filters setFilters={setFilters}/>
         <div>
           <Input setWord={setWord}/>
           <Companies data={filteredData}/>
